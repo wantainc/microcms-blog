@@ -185,7 +185,7 @@
                 >
               </li>
               <li class="menuListItem">
-                <a class="menuLink" href="https://microcms.io/download-usecase"
+                <a class="menuLink" href="https://microcms.io/ebook"
                   >導入事例集</a
                 >
               </li>

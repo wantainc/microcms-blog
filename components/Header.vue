@@ -173,7 +173,7 @@ export default {
             },
             {
               name: '導入事例集',
-              path: 'https://microcms.io/download-usecase',
+              path: 'https://microcms.io/ebook',
             },
           ],
         },
