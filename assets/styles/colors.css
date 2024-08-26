@@ -8,6 +8,8 @@
   --color-border-dark: #ccc;
   --color-border: #ddd;
   --color-border-light: #eee;
+  --color-primary: #563bff;
+  --color-primary-light: #664bff;
   --color-gradient-purple: linear-gradient(to right bottom, #5630af, #3067af);
   --color-gradient-purple-light: linear-gradient(
     to right bottom,

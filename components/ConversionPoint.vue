@@ -124,7 +124,7 @@ export default {
 
   .cvBackground {
     padding: 60px 1em;
-    background-image: url('/images/bg_microcms_screen_black.jpg');
+    background-image: url('/images/bg_microcms_screen_black.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -159,7 +159,7 @@ export default {
     display: inline-block;
     border: none;
     border-radius: 5px;
-    background: linear-gradient(to right bottom, #5630af, #3067af);
+    background-color: var(--color-primary);
     color: #fff;
     text-align: center;
     font-size: 24px;
@@ -168,7 +168,7 @@ export default {
     cursor: pointer;
 
     &:hover {
-      background: linear-gradient(to right bottom, #46209f, #20579f);
+      background-color: var(--color-primary-light);
     }
   }
 
@@ -196,7 +196,7 @@ export default {
     display: block;
     line-height: 1;
     border-radius: 5px;
-    background: linear-gradient(to right bottom, #5630af, #3067af);
+    background-color: var(--color-primary);
     color: #fff;
     text-align: center;
     font-size: 18px;
@@ -206,7 +206,7 @@ export default {
     margin-top: 20px;
 
     &:hover {
-      background: linear-gradient(to right bottom, #46209f, #20579f);
+      background-color: var(--color-primary-light);
     }
   }
 
@@ -282,7 +282,7 @@ export default {
 
   .cvBackground {
     padding: 40px 2em;
-    background-image: url('/images/bg_microcms_screen_black.jpg');
+    background-image: url('/images/bg_microcms_screen_black.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -316,7 +316,7 @@ export default {
     display: block;
     border: none;
     border-radius: 5px;
-    background: linear-gradient(to right bottom, #5630af, #3067af);
+    background-color: var(--color-primary);
     color: #fff;
     text-align: center;
     font-size: 18px;
@@ -326,7 +326,7 @@ export default {
     cursor: pointer;
 
     &:hover {
-      background: linear-gradient(to right bottom, #46209f, #20579f);
+      background-color: var(--color-primary-light);
     }
   }
 
@@ -348,7 +348,7 @@ export default {
     display: block;
     line-height: 1;
     border-radius: 5px;
-    background: linear-gradient(to right bottom, #5630af, #3067af);
+    background-color: var(--color-primary);
     color: #fff;
     text-align: center;
     font-size: 18px;
@@ -358,7 +358,7 @@ export default {
     margin-top: 20px;
 
     &:hover {
-      background: linear-gradient(to right bottom, #46209f, #20579f);
+      background-color: var(--color-primary-light);
     }
   }
 
