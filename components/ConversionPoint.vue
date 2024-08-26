@@ -134,7 +134,7 @@ export default {
   }
 
   .mainTitle {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     line-height: 1.7;
     margin-bottom: 20px;
@@ -244,9 +244,8 @@ export default {
     }
 
     .upperContents {
-      padding: 0 20px;
       display: grid;
-      grid-template-columns: 60% auto;
+      grid-template-columns: 40% auto;
       align-items: center;
       grid-gap: 5%;
     }
@@ -267,6 +266,7 @@ export default {
 
     .mainText {
       margin-bottom: 0;
+      font-size: 14px;
     }
 
     .buttonWrapper {
@@ -423,6 +423,7 @@ export default {
 
     .mainText {
       margin-bottom: 0;
+      font-size: 14px;
     }
   }
 }
