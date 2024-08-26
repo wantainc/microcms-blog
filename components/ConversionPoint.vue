@@ -20,54 +20,56 @@
       </p>
     </div>
 
-    <div v-else class="cvBackground">
-      <div class="cvContainer">
-        <h2 class="mainTitle">{{ getContents.title }}</h2>
-        <p class="mainContents">{{ getContents.text }}</p>
-        <p class="buttonWrapper">
-          <a
-            class="button ga-cta-link"
-            target="site"
-            :href="getContents.buttonLink"
-            >{{ getContents.buttonText }}</a
+    <div v-else>
+      <div class="cvBackground">
+        <div class="cvContainer">
+          <h2 class="mainTitle">{{ getContents.title }}</h2>
+          <p class="mainContents">{{ getContents.text }}</p>
+          <p class="buttonWrapper">
+            <a
+              class="button ga-cta-link"
+              target="site"
+              :href="getContents.buttonLink"
+              >{{ getContents.buttonText }}</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div class="background">
+          <h3 class="subTitle">microCMSについてお問い合わせ</h3>
+          <p>
+            初期費用無料・14日間の無料トライアル付き。ご不明な点はお気軽にお問い合わせください。
+          </p>
+          <a href="https://microcms.io/contact" class="buttonSmall ga-cta-link"
+            >お問い合わせ</a
           >
-        </p>
-      </div>
-    </div>
+        </div>
 
-    <div class="bottom">
-      <div class="background">
-        <h3 class="subTitle">microCMSについてお問い合わせ</h3>
-        <p>
-          初期費用無料・14日間の無料トライアル付き。ご不明な点はお気軽にお問い合わせください。
-        </p>
-        <a href="https://microcms.io/contact" class="buttonSmall ga-cta-link"
-          >お問い合わせ</a
-        >
-      </div>
-
-      <div class="background">
-        <h3 class="subTitle">microCMS公式アカウント</h3>
-        <p>
-          microCMSは各公式アカウントで最新情報をお届けしています。<br />フォローよろしくお願いします。
-        </p>
-        <ul class="iconList">
-          <li class="listItem">
-            <a target="_blank" href="https://x.com/micro_cms">
-              <img src="/images/icon_x.svg" alt="X" data-logo="x" />
-            </a>
-          </li>
-          <li class="listItem">
-            <a target="_blank" href="https://discord.gg/K3DPqw4EJ2">
-              <img src="/images/icon_discord.svg" alt="Discord" />
-            </a>
-          </li>
-          <li class="listItem">
-            <a target="_blank" href="https://github.com/microcmsio">
-              <img src="/images/icon_github.svg" alt="github" />
-            </a>
-          </li>
-        </ul>
+        <div class="background">
+          <h3 class="subTitle">microCMS公式アカウント</h3>
+          <p>
+            microCMSは各公式アカウントで最新情報をお届けしています。<br />フォローよろしくお願いします。
+          </p>
+          <ul class="iconList">
+            <li class="listItem">
+              <a target="_blank" href="https://x.com/micro_cms">
+                <img src="/images/icon_x.svg" alt="X" data-logo="x" />
+              </a>
+            </li>
+            <li class="listItem">
+              <a target="_blank" href="https://discord.gg/K3DPqw4EJ2">
+                <img src="/images/icon_discord.svg" alt="Discord" />
+              </a>
+            </li>
+            <li class="listItem">
+              <a target="_blank" href="https://github.com/microcmsio">
+                <img src="/images/icon_github.svg" alt="github" />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -122,7 +124,7 @@ export default {
 
   .cvBackground {
     padding: 60px 1em;
-    background-image: url('/images/bg_microcms_screen_black.jpg');
+    background-image: url('/images/bg_microcms_screen_black.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -157,7 +159,7 @@ export default {
     display: inline-block;
     border: none;
     border-radius: 5px;
-    background: linear-gradient(to right bottom, #5630af, #3067af);
+    background-color: var(--color-primary);
     color: #fff;
     text-align: center;
     font-size: 24px;
@@ -166,7 +168,7 @@ export default {
     cursor: pointer;
 
     &:hover {
-      background: linear-gradient(to right bottom, #46209f, #20579f);
+      background-color: var(--color-primary-light);
     }
   }
 
@@ -194,7 +196,7 @@ export default {
     display: block;
     line-height: 1;
     border-radius: 5px;
-    background: linear-gradient(to right bottom, #5630af, #3067af);
+    background-color: var(--color-primary);
     color: #fff;
     text-align: center;
     font-size: 18px;
@@ -204,7 +206,7 @@ export default {
     margin-top: 20px;
 
     &:hover {
-      background: linear-gradient(to right bottom, #46209f, #20579f);
+      background-color: var(--color-primary-light);
     }
   }
 
@@ -241,10 +243,6 @@ export default {
       vertical-align: top;
     }
 
-    .upper {
-      margin-bottom: 40px;
-    }
-
     .upperContents {
       padding: 0 20px;
       display: grid;
@@ -279,12 +277,12 @@ export default {
 
 @media (max-width: 820px) {
   .cvPoint {
-    margin: 20px 0;
+    margin: 40px 0;
   }
 
   .cvBackground {
     padding: 40px 2em;
-    background-image: url('/images/bg_microcms_screen_black.jpg');
+    background-image: url('/images/bg_microcms_screen_black.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -318,7 +316,7 @@ export default {
     display: block;
     border: none;
     border-radius: 5px;
-    background: linear-gradient(to right bottom, #5630af, #3067af);
+    background-color: var(--color-primary);
     color: #fff;
     text-align: center;
     font-size: 18px;
@@ -328,7 +326,7 @@ export default {
     cursor: pointer;
 
     &:hover {
-      background: linear-gradient(to right bottom, #46209f, #20579f);
+      background-color: var(--color-primary-light);
     }
   }
 
@@ -350,7 +348,7 @@ export default {
     display: block;
     line-height: 1;
     border-radius: 5px;
-    background: linear-gradient(to right bottom, #5630af, #3067af);
+    background-color: var(--color-primary);
     color: #fff;
     text-align: center;
     font-size: 18px;
@@ -360,7 +358,7 @@ export default {
     margin-top: 20px;
 
     &:hover {
-      background: linear-gradient(to right bottom, #46209f, #20579f);
+      background-color: var(--color-primary-light);
     }
   }
 
@@ -395,10 +393,6 @@ export default {
     img {
       max-width: 100%;
       vertical-align: top;
-    }
-
-    .upper {
-      margin-bottom: 40px;
     }
 
     .cvBackground {

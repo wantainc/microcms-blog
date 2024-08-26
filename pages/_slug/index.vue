@@ -55,8 +55,6 @@
             />
             <Toc :id="id" :toc="toc" :visible="toc_visible" />
             <Post :body="body" />
-            <ShareButtons :id="id" :title="title" />
-            <NextBlogNavigation :previous="previous_blog" :next="next_blog" />
             <ConversionPoint
               :id="id"
               :contents="cv_point"
@@ -64,6 +62,8 @@
                 cv_point === null || cv_point.length <= 0 ? '' : 'thumbnail'
               "
             />
+            <NextBlogNavigation :previous="previous_blog" :next="next_blog" />
+            <ShareButtons :id="id" :title="title" />
             <Writer v-if="writer" :writer="writer" />
             <Partner v-if="partner" :partner="partner" />
             <RelatedBlogs
