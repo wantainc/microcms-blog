@@ -76,6 +76,7 @@ export default {
   background-color: #f7f7fc;
   padding: 24px;
   border-radius: 5px;
+  margin-top: 40px;
 }
 
 .title {
@@ -131,19 +132,11 @@ export default {
 }
 
 @media (min-width: 820px) {
-  .share {
-    margin-top: 60px;
-  }
-
   .button {
     width: 200px;
   }
 }
 @media (min-width: 600px) and (max-width: 820px) {
-  .share {
-    margin-top: 60px;
-  }
-
   .button {
     width: 180px;
     font-size: 12px;
@@ -151,10 +144,6 @@ export default {
 }
 
 @media (max-width: 600px) {
-  .share {
-    margin-top: 40px;
-  }
-
   .shareLists {
     flex-direction: column;
   }
