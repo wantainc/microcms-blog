@@ -20,14 +20,14 @@
       <div class="menu" :class="{ isOpen: open }">
         <ul class="lists isMobile">
           <li class="list">
-            <a href="https://microcms.io/pricing">料金</a>
+            <a href="https://microcms.io/pricing">料金プラン</a>
           </li>
           <li class="list">
-            <a href="https://microcms.io/projects">導入事例</a>
+            <a href="https://microcms.io/projects">導入サイト一覧</a>
           </li>
           <li class="list">
             <a href="https://help.microcms.io/ja/knowledge" target="_blank"
-              >よくある質問</a
+              >ヘルプ</a
             >
           </li>
           <li class="list">
@@ -46,13 +46,13 @@
             >
           </li>
           <li class="list">
-            <a href="https://microcms.io/seminar/">セミナー</a>
+            <a href="https://microcms.io/seminars">セミナー情報</a>
           </li>
           <li class="list">
-            <a href="https://microcms.io/download">資料請求</a>
+            <a href="https://microcms.io/ebook">お役立ち資料</a>
           </li>
           <li class="list">
-            <a href="https://microcms.io/contact">お問い合わせ</a>
+            <a href="https://templates.microcms.io">テンプレート</a>
           </li>
         </ul>
 
@@ -89,13 +89,18 @@
           </li>
         </ul>
 
-        <ul class="lists">
+        <ul class="lists isMobileReverse">
           <li class="list">
             <a class="signin" href="https://app.microcms.io/signin">ログイン</a>
           </li>
           <li class="list">
+            <a class="contact" href="https://microcms.io/contact"
+              >お問い合わせ</a
+            >
+          </li>
+          <li class="list">
             <a class="signup" :href="`https://app.microcms.io${params}`"
-              >新規登録</a
+              >無料ではじめる</a
             >
           </li>
         </ul>
@@ -123,7 +128,19 @@ export default {
               path: 'https://microcms.io/features/schema',
             },
             {
-              name: 'API連携',
+              name: 'カスタムフィールド',
+              path: 'https://microcms.io/features/custom-field',
+            },
+            {
+              name: 'コンテンツAPI',
+              path: 'https://microcms.io/features/contents-api',
+            },
+            {
+              name: 'マネジメントAPI',
+              path: 'https://document.microcms.io/management-api/introduction',
+            },
+            {
+              name: 'APIデータ連携',
               path: 'https://microcms.io/features/link-api',
             },
             {
@@ -153,89 +170,55 @@ export default {
           ],
         },
         {
-          name: '料金',
-          path: 'https://microcms.io/pricing',
-          isDropDown: false,
-          contents: [],
-        },
-        {
-          name: '事例',
+          name: 'リソース',
           path: '',
           isDropDown: true,
           contents: [
+            {
+              name: '導入サイト一覧',
+              path: 'https://microcms.io/projects',
+            },
             {
               name: 'インタビュー',
               path: 'https://blog.microcms.io/category/usecase/page/1/',
             },
             {
-              name: '導入事例一覧',
-              path: 'https://microcms.io/projects',
+              name: 'セミナー情報',
+              path: 'https://microcms.io/seminars',
             },
             {
-              name: '導入事例集',
-              path: 'https://microcms.io/ebook',
-            },
-          ],
-        },
-        {
-          name: 'サポート',
-          path: '',
-          isDropDown: true,
-          contents: [
-            {
-              name: 'よくある質問',
-              path: 'https://help.microcms.io/ja/knowledge',
-            },
-            {
-              name: '更新情報',
-              path: 'https://blog.microcms.io/category/update/page/1/',
+              name: 'イベント情報',
+              path: 'https://microcms.io/events',
             },
             {
               name: 'ドキュメント',
               path: 'https://document.microcms.io/',
             },
             {
+              name: 'ヘルプ',
+              path: 'https://help.microcms.io/ja/knowledge',
+            },
+            {
               name: 'ブログ',
               path: 'https://blog.microcms.io/',
             },
             {
-              name: 'GitHub',
-              path: 'https://github.com/microcmsio',
-            },
-            {
-              name: '制作プラン',
-              path: 'https://microcms.io/service/produce',
-            },
-            {
-              name: 'パートナー',
-              path: 'https://microcms.io/partners-list',
+              name: 'テンプレート',
+              path: 'https://templates.microcms.io/',
             },
           ],
         },
         {
-          name: 'セミナー',
-          path: 'https://microcms.io/seminar',
+          name: '料金プラン',
+          path: 'https://microcms.io/pricing',
           isDropDown: false,
           contents: [],
         },
         {
-          name: '資料請求・デモ',
-          path: '',
-          isDropDown: true,
-          contents: [
-            {
-              name: 'オンライン説明会',
-              path: 'https://microcms.io/online-demo',
-            },
-            {
-              name: 'サービス紹介資料',
-              path: 'https://microcms.io/download',
-            },
-            {
-              name: 'お役立ち資料',
-              path: 'https://microcms.io/ebook',
-            },
-          ],
+          name: 'お役立ち資料',
+          path: 'https://microcms.io/ebook',
+          isDropDown: false,
+          contents: [],
         },
       ],
     };
@@ -278,6 +261,7 @@ export default {
     z-index: 20;
     border-bottom: 1px solid var(--color-border);
     background-color: #fff;
+    font-size: 14px;
   }
 
   .empty {
@@ -306,7 +290,7 @@ export default {
 
   .menu {
     display: flex;
-    padding: 12px 0;
+    padding: 8px 0;
   }
 
   .lists {
@@ -331,7 +315,7 @@ export default {
   }
 
   .list {
-    margin: -8px 30px -8px 0;
+    margin-right: 32px;
     padding: 8px 0;
     white-space: nowrap;
     position: relative;
@@ -345,18 +329,29 @@ export default {
       color: var(--color-text-main);
 
       &.signup {
-        border-radius: 5px;
-        background: linear-gradient(to right bottom, #5630af, #3067af);
+        border-radius: 4px;
+        background-color: var(--color-primary);
         color: #fff;
         text-align: center;
-        padding: 8px 24px;
+        padding: 8px 32px;
+        font-size: 16px;
+      }
+
+      &.contact {
+        border-radius: 4px;
+        border: 1px solid var(--color-primary);
+        color: var(--color-primary);
+        text-align: center;
+        padding: 8px 32px;
+        font-size: 16px;
       }
 
       &.signin {
-        border-radius: 5px;
-        background-color: var(--color-bg-purple);
+        border-radius: 4px;
         text-align: center;
-        padding: 8px 24px;
+        padding: 8px 32px;
+        border-left: 1px solid #eee;
+        margin-right: -32px;
       }
     }
   }
@@ -391,10 +386,11 @@ export default {
     position: absolute;
     background-color: #fff;
     top: 35px;
-    left: 0;
+    right: 0px;
     padding: 8px 16px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    text-align: center;
   }
 
   .dropDownMenuList {
@@ -494,6 +490,11 @@ export default {
     &.isDesktop {
       display: none;
     }
+
+    &.isMobileReverse {
+      display: flex;
+      flex-direction: column-reverse;
+    }
   }
 
   .list {
@@ -504,23 +505,27 @@ export default {
       display: block;
       color: var(--color-text-main);
       padding: 8px 0;
-      border-bottom: 1px solid var(--color-border-light);
 
       &.signup {
-        border-radius: 5px;
-        background: linear-gradient(to right bottom, #5630af, #3067af);
+        border-radius: 4px;
+        background-color: var(--color-primary);
         color: #fff;
         text-align: center;
         font-weight: bold;
+        margin-bottom: 8px;
+      }
+
+      &.contact {
+        border-radius: 4px;
+        color: var(--color-primary);
+        border: 1px solid var(--color-primary);
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 8px;
       }
 
       &.signin {
-        display: block;
-        border-radius: 5px;
-        background-color: var(--color-bg-purple);
-        text-align: center;
-        font-weight: bold;
-        margin-bottom: 12px;
+        display: none;
       }
     }
 
