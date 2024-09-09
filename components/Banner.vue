@@ -3,8 +3,9 @@
     <a
       v-if="banner && banner.image"
       :href="banner.url"
-      class="link ga-cta-link"
+      class="link track-click-by-gtm"
       target="banner"
+      data-gtm-track-event-name="click-blog-banner"
     >
       <picture v-if="banner.image">
         <source
