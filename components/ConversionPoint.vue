@@ -12,8 +12,9 @@
       </div>
       <p class="buttonWrapper">
         <a
-          class="button ga-cta-link"
+          class="button track-click-by-gtm"
           target="site"
+          data-gtm-track-event-name="click-cta-custom"
           :href="getContents.buttonLink"
           >{{ getContents.buttonText }}</a
         >
@@ -27,7 +28,8 @@
           <p class="mainContents">{{ getContents.text }}</p>
           <p class="buttonWrapper">
             <a
-              class="button ga-cta-link"
+              class="button track-click-by-gtm"
+              data-gtm-track-event-name="click-cta-top"
               target="site"
               :href="getContents.buttonLink"
               >{{ getContents.buttonText }}</a
@@ -42,7 +44,10 @@
           <p>
             初期費用無料・14日間の無料トライアル付き。ご不明な点はお気軽にお問い合わせください。
           </p>
-          <a href="https://microcms.io/contact" class="buttonSmall ga-cta-link"
+          <a
+            href="https://microcms.io/contact"
+            class="buttonSmall track-click-by-gtm"
+            data-gtm-track-event-name="click-cta-contact"
             >お問い合わせ</a
           >
         </div>
