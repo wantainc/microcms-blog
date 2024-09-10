@@ -12,9 +12,8 @@
       </div>
       <p class="buttonWrapper">
         <a
-          class="button track-click-by-gtm"
+          class="button blog-cta-link"
           target="site"
-          data-gtm-track-event-name="click-cta-custom"
           :href="getContents.buttonLink"
           >{{ getContents.buttonText }}</a
         >
@@ -28,8 +27,7 @@
           <p class="mainContents">{{ getContents.text }}</p>
           <p class="buttonWrapper">
             <a
-              class="button track-click-by-gtm"
-              data-gtm-track-event-name="click-cta-top"
+              class="button blog-cta-link"
               target="site"
               :href="getContents.buttonLink"
               >{{ getContents.buttonText }}</a
@@ -46,8 +44,7 @@
           </p>
           <a
             href="https://microcms.io/contact"
-            class="buttonSmall track-click-by-gtm"
-            data-gtm-track-event-name="click-cta-contact"
+            class="buttonSmall blog-cta-link"
             >お問い合わせ</a
           >
         </div>
