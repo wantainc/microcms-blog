@@ -184,7 +184,9 @@ export default {
       const oneYearAgoDate = new Date();
       oneYearAgoDate.setFullYear(currentDate.getFullYear() - 1);
 
-      const createdAtDate = new Date(this.publishedAt || this.createdAt);
+      const createdAtDate = new Date(
+        this.revisedAt || this.publishedAt || this.createdAt
+      );
 
       // createdAtが1年前の日付かどうか判定
       return createdAtDate < oneYearAgoDate;
