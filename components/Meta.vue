@@ -23,10 +23,16 @@
     </div>
 
     <div class="meta">
-      <span class="timestamp">
+      <span class="timestamp" title="公開日">
         <img src="/images/icon_clock.svg" width="20" height="20" alt />
         <time :datetime="$dayjs(createdAt).format('YYYY-MM-DD')">
           {{ $dayjs(createdAt).format('YYYY/MM/DD') }}
+        </time>
+      </span>
+      <span v-if="isRevised" class="timestamp" title="更新日">
+        <img src="/images/icon_update.svg" width="20" height="20" alt />
+        <time :datetime="$dayjs(revisedAt).format('YYYY-MM-DD')">
+          {{ $dayjs(revisedAt).format('YYYY/MM/DD') }}
         </time>
       </span>
       <span v-if="author" class="author">
@@ -43,6 +49,11 @@ export default {
     createdAt: {
       type: String,
       required: true,
+    },
+    revisedAt: {
+      type: String,
+      required: false,
+      default: undefined,
     },
     author: {
       type: Object,
@@ -63,6 +74,17 @@ export default {
       type: Boolean,
       required: false,
       default: false,
+    },
+  },
+  computed: {
+    isRevised() {
+      if (this.revisedAt === undefined) {
+        return false;
+      }
+      return (
+        this.$dayjs(this.revisedAt).format('YYYY-MM-DD') !==
+        this.$dayjs(this.createdAt).format('YYYY-MM-DD')
+      );
     },
   },
 };
