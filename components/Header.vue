@@ -23,7 +23,7 @@
             <a href="https://microcms.io/pricing">料金プラン</a>
           </li>
           <li class="list">
-            <a href="https://microcms.io/projects">導入サイト一覧</a>
+            <a href="https://microcms.io/projects">導入事例一覧</a>
           </li>
           <li class="list">
             <a href="https://help.microcms.io/ja/knowledge" target="_blank"
@@ -124,7 +124,7 @@ export default {
           isDropDown: true,
           contents: [
             {
-              name: 'スキーマ',
+              name: 'エディタ',
               path: 'https://microcms.io/features/schema',
             },
             {
@@ -175,11 +175,11 @@ export default {
           isDropDown: true,
           contents: [
             {
-              name: '導入サイト一覧',
+              name: '導入事例一覧',
               path: 'https://microcms.io/projects',
             },
             {
-              name: 'インタビュー',
+              name: '導入事例インタビュー',
               path: 'https://blog.microcms.io/category/usecase/page/1/',
             },
             {
