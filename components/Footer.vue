@@ -11,7 +11,7 @@
                 <a class="menuLink" href="https://microcms.io/pricing">料金</a>
               </li>
               <li class="menuListItem">
-                <a class="menuLink" href="https://microcms.io/#feature"
+                <a class="menuLink" href="https://microcms.io/for-business"
                   >microCMSの特徴</a
                 >
               </li>
@@ -26,9 +26,12 @@
               <li class="menuListItem">
                 <a
                   class="menuLink"
-                  href="https://microcms.io/solutions/multidevice"
-                  >活用方法 - マルチデバイス</a
+                  href="https://microcms.io/solutions/multitenant"
+                  >活用方法 - マルチテナント</a
                 >
+              </li>
+              <li class="menuListItem">
+                <hr />
               </li>
               <li class="menuListItem">
                 <a
@@ -42,14 +45,6 @@
                   >導入事例一覧</a
                 >
               </li>
-              <li class="menuListItem">
-                <hr />
-              </li>
-              <li class="menuListItem">
-                <a class="menuLink" href="https://microcms.io/service/produce"
-                  >Jamstack制作</a
-                >
-              </li>
             </ul>
           </section>
         </li>
@@ -60,7 +55,28 @@
             <ul class="menuList">
               <li class="menuListItem">
                 <a class="menuLink" href="https://microcms.io/features/schema"
-                  >スキーマ</a
+                  >エディタ</a
+                >
+              </li>
+              <li class="menuListItem">
+                <a
+                  class="menuLink"
+                  href="https://microcms.io/features/custom-field"
+                  >カスタムフィールド</a
+                >
+              </li>
+              <li class="menuListItem">
+                <a
+                  class="menuLink"
+                  href="https://microcms.io/features/contents-api"
+                  >コンテンツAPI</a
+                >
+              </li>
+              <li class="menuListItem">
+                <a
+                  class="menuLink"
+                  href="https://document.microcms.io/management-api/introduction"
+                  >マネジメントAPI</a
                 >
               </li>
               <li class="menuListItem">
@@ -115,7 +131,7 @@
                   class="menuLink"
                   href="https://help.microcms.io/ja/knowledge"
                   target="_blank"
-                  >よくある質問</a
+                  >ヘルプ</a
                 >
               </li>
               <li class="menuListItem">
@@ -153,6 +169,14 @@
               <li class="menuListItem">
                 <a
                   class="menuLink"
+                  href="https://templates.microcms.io/"
+                  target="_blank"
+                  >テンプレート</a
+                >
+              </li>
+              <li class="menuListItem">
+                <a
+                  class="menuLink"
                   href="https://github.com/microcmsio"
                   target="_blank"
                   >GitHub</a
@@ -161,9 +185,33 @@
               <li class="menuListItem">
                 <a
                   class="menuLink"
+                  href="https://microcms.notion.site/72fba106b7ac4178a590b17875f09d96?v=9c050961701f4b44a6f74e576e7d1c9a"
+                  target="_blank"
+                  >ロードマップ</a
+                >
+              </li>
+              <li class="menuListItem">
+                <a
+                  class="menuLink"
                   href="https://status.microcms.io/"
                   target="_blank"
                   >ステータス</a
+                >
+              </li>
+              <li class="menuListItem">
+                <a
+                  class="menuLink"
+                  href="https://www.youtube.com/channel/UCjdOq0rAB8Or1uHio9N0_pQ"
+                  target="_blank"
+                  >動画講座</a
+                >
+              </li>
+              <li class="menuListItem">
+                <a
+                  class="menuLink"
+                  href="https://microcms.io/community"
+                  target="_blank"
+                  >コミュニティ</a
                 >
               </li>
             </ul>
@@ -175,53 +223,34 @@
             <h3 class="categoryTitle">資料請求・セミナー</h3>
             <ul class="menuList">
               <li class="menuListItem">
-                <a class="menuLink" href="https://microcms.io/download"
-                  >サービス紹介資料</a
-                >
-              </li>
-              <li class="menuListItem">
-                <a class="menuLink" href="https://microcms.io/download-features"
-                  >ヘッドレスCMSの特徴</a
-                >
-              </li>
-              <li class="menuListItem">
                 <a class="menuLink" href="https://microcms.io/ebook"
-                  >導入事例集</a
-                >
-              </li>
-              <li class="menuListItem">
-                <a
-                  class="menuLink"
-                  href="https://microcms.io/download-multidevice"
-                  >活用方法 - マルチデバイス</a
-                >
-              </li>
-              <li class="menuListItem">
-                <a class="menuLink" href="https://microcms.io/download-cms"
-                  >CMS比較表</a
+                  >お役立ち資料</a
                 >
               </li>
               <li class="menuListItem">
                 <hr />
               </li>
               <li class="menuListItem">
-                <a
-                  class="menuLink"
-                  href="https://microcms.io/seminar/product-introduction"
-                  >サービス紹介セミナー</a
+                <a class="menuLink" href="https://microcms.io/seminars"
+                  >セミナー情報</a
                 >
               </li>
               <li class="menuListItem">
-                <a
-                  class="menuLink"
-                  href="https://jamjamjamstack.connpass.com/"
-                  target="_blank"
-                  >Jamstackミートアップ</a
+                <a class="menuLink" href="https://microcms.io/events"
+                  >エンジニア向けイベント情報</a
+                >
+              </li>
+            </ul>
+            <h3 class="categoryTitle">メディアキット</h3>
+            <ul class="menuList">
+              <li class="menuListItem">
+                <a class="menuLink" href="https://microcms.io/logo"
+                  >ロゴガイドライン</a
                 >
               </li>
               <li class="menuListItem">
-                <a class="menuLink" href="https://microcms.io/seminar"
-                  >セミナー・イベント情報</a
+                <a class="menuLink" href="https://microcms.io/ui-screenshot"
+                  >UIスクリーンショット</a
                 >
               </li>
             </ul>
@@ -238,17 +267,12 @@
                 >
               </li>
               <li class="menuListItem">
-                <a class="menuLink" href="https://microcms.io/online-demo"
-                  >オンラインミーティング</a
-                >
-              </li>
-              <li class="menuListItem">
-                <a class="menuLink" href="https://microcms.io/partners"
+                <a class="menuLink" href="https://microcms.io/for-partners"
                   >パートナーになる</a
                 >
               </li>
               <li class="menuListItem">
-                <a class="menuLink" href="https://microcms.io/partners-list"
+                <a class="menuLink" href="https://microcms.io/partners"
                   >パートナーを探す</a
                 >
               </li>
@@ -292,6 +316,9 @@
       </li>
       <li class="list">
         <a href="https://microcms.io/policy">プライバシーポリシー</a>
+      </li>
+      <li class="list">
+        <a href="https://microcms.io/security-policy">情報セキュリティ方針</a>
       </li>
     </ul>
     <p class="cr">Copyright © microcms.io All rights reserved.</p>
@@ -348,13 +375,17 @@
       width: 80%;
       margin: 20px auto 20px 0;
     }
+
+    + .categoryTitle {
+      margin-top: 40px;
+    }
   }
 
   .menuLink {
     font-size: 14px;
     color: #ddd;
     display: inline-block;
-    padding: 10px 0;
+    padding: 9px 0;
   }
 
   .lists {
@@ -419,6 +450,9 @@
     hr {
       width: 80%;
       margin: 20px auto 20px 0;
+    }
+    + .categoryTitle {
+      margin-top: 40px;
     }
   }
 
