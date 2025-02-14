@@ -267,12 +267,12 @@
                 >
               </li>
               <li class="menuListItem">
-                <a class="menuLink" href="https://microcms.io/partners"
+                <a class="menuLink" href="https://microcms.io/for-partners"
                   >パートナーになる</a
                 >
               </li>
               <li class="menuListItem">
-                <a class="menuLink" href="https://microcms.io/partners-list"
+                <a class="menuLink" href="https://microcms.io/partners"
                   >パートナーを探す</a
                 >
               </li>
