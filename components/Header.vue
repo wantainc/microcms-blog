@@ -89,16 +89,11 @@
           </li>
         </ul>
 
-        <ul class="lists isMobileReverse">
-          <li class="list">
+        <ul class="lists listsButton">
+          <li class="list listSignin">
             <a class="signin" href="https://app.microcms.io/signin">ログイン</a>
           </li>
-          <li class="list">
-            <a class="contact" href="https://microcms.io/contact"
-              >お問い合わせ</a
-            >
-          </li>
-          <li class="list">
+          <li class="list noMargin">
             <a class="signup" :href="`https://app.microcms.io${params}`"
               >無料ではじめる</a
             >
@@ -209,6 +204,21 @@ export default {
           ],
         },
         {
+          name: 'パートナー',
+          path: '',
+          isDropDown: true,
+          contents: [
+            {
+              name: 'パートナーになる',
+              path: 'https://microcms.io/for-partners',
+            },
+            {
+              name: 'パートナーを探す',
+              path: 'https://microcms.io/partners',
+            },
+          ],
+        },
+        {
           name: '料金プラン',
           path: 'https://microcms.io/pricing',
           isDropDown: false,
@@ -219,6 +229,21 @@ export default {
           path: 'https://microcms.io/ebook',
           isDropDown: false,
           contents: [],
+        },
+        {
+          name: 'お問い合わせ',
+          path: '',
+          isDropDown: true,
+          contents: [
+            {
+              name: '新規導入に関するご相談',
+              path: 'https://microcms.io/contact',
+            },
+            {
+              name: 'パートナー紹介のご相談',
+              path: 'https://microcms.io/partners#consultation',
+            },
+          ],
         },
       ],
     };
@@ -247,7 +272,7 @@ export default {
 </script>
 
 <style scoped>
-@media (min-width: 800px) {
+@media (min-width: 1240px) {
   .header {
     position: fixed;
     top: 0;
@@ -275,13 +300,14 @@ export default {
 
     a {
       display: block;
-      height: 28px;
+      width: 160px;
+      height: 30.3px;
     }
   }
 
   .logoImg {
-    width: auto;
-    height: 28px;
+    width: 160px;
+    height: auto;
   }
 
   .menuBtn {
@@ -312,16 +338,24 @@ export default {
     &.isDesktop {
       display: flex;
     }
+
+    &.listsButton {
+      margin-left: 10px;
+    }
   }
 
   .list {
-    margin-right: 32px;
+    margin-right: 22px;
     padding: 8px 0;
     white-space: nowrap;
     position: relative;
 
     &.noMargin {
       margin: 0;
+    }
+
+    &.listSignin {
+      margin-right: 16px;
     }
 
     a,
@@ -333,25 +367,17 @@ export default {
         background-color: var(--color-primary);
         color: #fff;
         text-align: center;
-        padding: 8px 32px;
-        font-size: 16px;
-      }
-
-      &.contact {
-        border-radius: 4px;
-        border: 1px solid var(--color-primary);
-        color: var(--color-primary);
-        text-align: center;
-        padding: 8px 32px;
+        padding: 12px 34px;
         font-size: 16px;
       }
 
       &.signin {
         border-radius: 4px;
+        border: 1px solid var(--color-primary);
+        color: var(--color-primary);
         text-align: center;
-        padding: 8px 32px;
-        border-left: 1px solid #eee;
-        margin-right: -32px;
+        padding: 11px 32px;
+        font-size: 16px;
       }
     }
   }
@@ -371,7 +397,7 @@ export default {
       display: inline-block;
       width: 16px;
       height: 16px;
-      margin-left: 4px;
+      margin-left: 6px;
       background: url('/images/icon_arrow_bottom.svg') center center no-repeat;
       background-size: contain;
       position: absolute;
@@ -422,7 +448,7 @@ export default {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1240px) {
   .header {
     position: fixed;
     top: 0;
@@ -495,6 +521,17 @@ export default {
       display: flex;
       flex-direction: column-reverse;
     }
+
+    &.listsButton {
+      display: flex;
+      flex-direction: row-reverse;
+      padding-right: 10px;
+      padding-left: 10px;
+      .list {
+        width: calc(100% / 2);
+        padding: 0 8px;
+      }
+    }
   }
 
   .list {
@@ -515,17 +552,13 @@ export default {
         margin-bottom: 8px;
       }
 
-      &.contact {
+      &.signin {
         border-radius: 4px;
         color: var(--color-primary);
         border: 1px solid var(--color-primary);
         text-align: center;
         font-weight: bold;
         margin-bottom: 8px;
-      }
-
-      &.signin {
-        display: none;
       }
     }
 

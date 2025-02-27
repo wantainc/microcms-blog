@@ -259,13 +259,23 @@
 
         <li class="sitemapListItem">
           <section>
-            <h3 class="categoryTitle">コンタクト</h3>
+            <h3 class="categoryTitle">お問い合わせ</h3>
             <ul class="menuList">
               <li class="menuListItem">
                 <a class="menuLink" href="https://microcms.io/contact"
-                  >お問い合わせ</a
+                  >新規導入に関するご相談</a
                 >
               </li>
+              <li class="menuListItem">
+                <a
+                  class="menuLink"
+                  href="https://microcms.io/partners#consultation"
+                  >パートナー紹介のご相談</a
+                >
+              </li>
+            </ul>
+            <h3 class="categoryTitle">パートナー</h3>
+            <ul class="menuList">
               <li class="menuListItem">
                 <a class="menuLink" href="https://microcms.io/for-partners"
                   >パートナーになる</a
