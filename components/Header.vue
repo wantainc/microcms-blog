@@ -20,6 +20,9 @@
       <div class="menu" :class="{ isOpen: open }">
         <ul class="lists isMobile">
           <li class="list">
+            <a href="https://microcms.io/contact">お問い合わせ</a>
+          </li>
+          <li class="list">
             <a href="https://microcms.io/pricing">料金プラン</a>
           </li>
           <li class="list">
