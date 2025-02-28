@@ -89,8 +89,8 @@
           </li>
         </ul>
 
-        <ul class="lists listsButton">
-          <li class="list listSignin">
+        <ul class="lists authLinks">
+          <li class="list authLinksItem">
             <a class="signin" href="https://app.microcms.io/signin">ログイン</a>
           </li>
           <li class="list noMargin">
@@ -339,7 +339,7 @@ export default {
       display: flex;
     }
 
-    &.listsButton {
+    &.authLinks {
       margin-left: 10px;
     }
   }
@@ -354,7 +354,7 @@ export default {
       margin: 0;
     }
 
-    &.listSignin {
+    &.authLinksItem {
       margin-right: 16px;
     }
 
@@ -522,7 +522,7 @@ export default {
       flex-direction: column-reverse;
     }
 
-    &.listsButton {
+    &.authLinks {
       display: flex;
       flex-direction: row-reverse;
       padding-right: 10px;
